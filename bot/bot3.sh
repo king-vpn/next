@@ -1,5 +1,14 @@
 #!/bin/bash
+MYIP=$(wget -qO- ipinfo.io/ip);
 
+IZIN=$(curl -sS https://raw.githubusercontent.com/king-vpn/next/ip/ | awk '{print $4}' | grep $MYIP)
+if [ $MYIP = $IZIN ]; then
+echo "IZIN DI TERIMA!!"
+else
+clear
+figlet "Akses di tolak!! Silakan Hubungi Admin" | lolcat
+exit 0
+fi
 
 #install
 cp /media/cybervpn/var.txt /tmp
