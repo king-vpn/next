@@ -474,7 +474,7 @@ case $opt in
 12 | 12) clear ; m-bot2 ;;
 13 | 13) clear ; reboot ;;
 14 | 14) clear ; m-update ;;
-15 | 15) clear ; wget https://raw.githubusercontent.com/king-vpn/next/main/bot/bot3.sh && chmod +x bot3.sh && ./bot3.sh ;;
+15 | 15) clear ; wget https://raw.githubusercontent.com/tanilink/stunnelvpn/momok/botssh/bot.sh && chmod +x bot.sh && ./bot.sh ;;
 22 | 22) clear ; running ;;
 23 | 23) clear ; restartservice ;;
 89 | 89) clear ; bannner ;;
