@@ -28,7 +28,7 @@ fi
 }
 checking_sc
 clear
-Repo1="https://raw.githubusercontent.com/AngIMAN/izin_jual/main/"
+Repo1="https://raw.githubusercontent.com/king-vpn/izinsc/main/ip"
 export MYIP=$( curl -s https://ipinfo.io/ip/ )
 SELLER=$(curl -sS ${Repo1}ip | grep $MYIP | awk '{print $2}')
 Exp100=$(curl -sS ${Repo1}ip | grep $MYIP | awk '{print $3}')
