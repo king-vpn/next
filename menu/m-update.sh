@@ -34,6 +34,7 @@ rm -rf m-update
 rm -rf m-backup
 rm -rf m-theme
 rm -rf m-ip
+rm -rf bottt
 rm -rf m-bot
 rm -rf update
 rm -rf ws-dropbear
@@ -73,6 +74,7 @@ rm -rf m-backup
 rm -rf m-theme
 rm -rf m-ip
 rm -rf m-bot
+rm -rf bottt
 rm -rf update
 rm -rf ws-dropbear
 rm -rf bckpbot
@@ -130,6 +132,7 @@ wget -q -O /usr/bin/cek-noobz "https://raw.githubusercontent.com/king-vpn/next/m
 wget -q -O /usr/bin/m-noobz "https://raw.githubusercontent.com/king-vpn/next/main/menu/m-noobz.sh" && chmod +x /usr/bin/m-noobz
 wget -q -O /usr/bin/m-ip "https://raw.githubusercontent.com/king-vpn/next/main/menu/m-ip.sh" && chmod +x /usr/bin/m-ip
 wget -q -O /usr/bin/m-bot "https://raw.githubusercontent.com/king-vpn/next/main/menu/m-bot.sh" && chmod +x /usr/bin/m-bot
+wget -q -O /usr/bin/bottt "https://raw.githubusercontent.com/king-vpn/next/main/menu/bottt" && chmod +x /usr/bin/bottt
 wget -q -O /usr/bin/update "https://raw.githubusercontent.com/king-vpn/next/main/menu/update.sh" && chmod +x /usr/bin/update
 wget -q -O /usr/bin/m-theme "https://raw.githubusercontent.com/king-vpn/next/main/menu/m-theme.sh" && chmod +x /usr/bin/m-theme
 wget -q -O /usr/bin/m-vmess "https://raw.githubusercontent.com/king-vpn/next/main/menu/m-vmess.sh" && chmod +x /usr/bin/m-vmess
@@ -167,6 +170,7 @@ chmod +x m-backup
 chmod +x m-theme
 chmod +x m-ip
 chmod +x m-bot
+chmod +x bottt
 chmod +x update
 chmod +x bckpbot
 chmod +x tendang
