@@ -341,7 +341,7 @@ echo -e " $COLOR1│$NC ${COLOR1}[${WH}05${COLOR1}]${NC}${COLOR1}• ${WH}NOOBZV
 echo -e " $COLOR1│$NC ${COLOR1}[${WH}06${COLOR1}]${NC}${COLOR1}• ${WH}TROJAN-GO   ${COLOR1}│${NC}   ${stat_trgo}${COLOR1}   ${COLOR1}│${NC}  $jumlah_trgo Accounts ${NC}"
 echo -e " $COLOR1╰═════════════════════════════════════════════════════════╯${NC}"
 echo -e " $COLOR1╭═════════════════════════════════════════════════════════╮${NC}"
-echo -e " $COLOR1│$NC ${COLOR1}[${WH}07${COLOR1}]${NC}${COLOR1}• ${WH}MENU SYSTEM ${COLOR1}│${NC} ${COLOR1}[${WH}11${COLOR1}]${NC}${COLOR1}• ${WH}BOT PANEL  ${COLOR1}│${NC} ${COLOR1}[${WH}15${COLOR1}]${NC}${COLOR1}• ${WH}cooming soon${WH}"
+echo -e " $COLOR1│$NC ${COLOR1}[${WH}07${COLOR1}]${NC}${COLOR1}• ${WH}MENU SYSTEM ${COLOR1}│${NC} ${COLOR1}[${WH}11${COLOR1}]${NC}${COLOR1}• ${WH}BOT PANEL  ${COLOR1}│${NC} ${COLOR1}[${WH}15${COLOR1}]${NC}${COLOR1}• ${WH}BOT SELLER ${WH}"
 echo -e " $COLOR1│$NC ${COLOR1}[${WH}08${COLOR1}]${NC}${COLOR1}• ${WH}MENU BACKUP ${COLOR1}│${NC} ${COLOR1}[${WH}12${COLOR1}]${NC}${COLOR1}• ${WH}BOT NOTIF  ${COLOR1}│${NC} ${COLOR1}[${WH}16${COLOR1}]${NC}${COLOR1}• ${WH}cooming soon${WH}"
 echo -e " $COLOR1│$NC ${COLOR1}[${WH}09${COLOR1}]${NC}${COLOR1}• ${WH}RESTART     ${COLOR1}│${NC} ${COLOR1}[${WH}13${COLOR1}]${NC}${COLOR1}• ${WH}REBOOT     ${COLOR1}│${NC} ${COLOR1}[${WH}17${COLOR1}]${NC}${COLOR1}• ${WH}cooming soon${WH}"
 echo -e " $COLOR1│$NC ${COLOR1}[${WH}10${COLOR1}]${NC}${COLOR1}• ${WH}RUNNING     ${COLOR1}│${NC} ${COLOR1}[${WH}14${COLOR1}]${NC}${COLOR1}• ${WH}UPDATE     ${COLOR1}│${NC} ${COLOR1}[${WH}18${COLOR1}]${NC}${COLOR1}• ${WH}cooming soon${WH}"
@@ -474,6 +474,7 @@ case $opt in
 12 | 12) clear ; m-bot2 ;;
 13 | 13) clear ; reboot ;;
 14 | 14) clear ; m-update ;;
+15 | 15) clear ; m-bot3 ;;
 22 | 22) clear ; running ;;
 23 | 23) clear ; restartservice ;;
 89 | 89) clear ; bannner ;;
