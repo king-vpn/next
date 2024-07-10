@@ -1066,12 +1066,12 @@ case $opt in
 04 |4) clear ; bw ; exit ;;
 05 |5) clear ; limitspeed ; exit ;;
 06 |6) clear ; m-theme ; exit ;;
-07 |9) clear ; nano /etc/issue.net ; exit ;;
-08 |10) clear ; nameauthor ;;
-09 |11) clear ; m-bot2 ; exit ;;
-10 |12) clear ; certv2ray ; exit ;;
-11 |13) clear ; gotopp ; exit ;;
-12 |14) clear ; coremenu ; exit ;;
+07 |7) clear ; nano /etc/issue.net ; exit ;;
+08 |08) clear ; nameauthor ;;
+09 |09) clear ; m-bot2 ; exit ;;
+10 |10) clear ; certv2ray ; exit ;;
+11 |11) clear ; gotopp ; exit ;;
+12 |12) clear ; coremenu ; exit ;;
 99 |99) clear ; clearcache ; exit ;;
 00 |0) clear ; menu ; exit ;;
 *) echo -e "" ; echo "Anda salah tekan" ; sleep 1 ; m-system ;;
