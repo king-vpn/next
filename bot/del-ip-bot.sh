@@ -1,7 +1,7 @@
 #!/bin/bash
 # Token kingvpn77 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
     TOKEN="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"
-    git clone https://github.com/king-vpn/next/root/ipvps/ &> /dev/null
+    git clone https://github.com/king-vpn/next /root/ipvps/ &> /dev/null
     clear
     echo ""
     echo -e "${g}         LIST IP VPS          $NC"
