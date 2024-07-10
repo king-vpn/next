@@ -1054,7 +1054,7 @@ echo -e " $COLOR1║${NC} ${WH}[${COLOR1}02${WH}]${NC} ${COLOR1}• ${WH}SPEEDTE
 echo -e " $COLOR1║${NC} ${WH}[${COLOR1}03${WH}]${NC} ${COLOR1}• ${WH}AUTO REBOOT   ${WH}      ${WH}[${COLOR1}09${WH}]${NC} ${COLOR1}• ${WH}CHANGE  BOT INFO${WH}   $COLOR1║ $NC"
 echo -e " $COLOR1║${NC} ${WH}[${COLOR1}04${WH}]${NC} ${COLOR1}• ${WH}CHECK BANDWITH${WH}      ${WH}[${COLOR1}10${WH}]${NC} ${COLOR1}• ${WH}FIX NGINX OFF${WH}      $COLOR1║ $NC"
 echo -e " $COLOR1║${NC} ${WH}[${COLOR1}05${WH}]${NC} ${COLOR1}• ${WH}LIMIT SPEED${WH}         ${WH}[${COLOR1}11${WH}]${NC} ${COLOR1}• ${WH}CEK PERFORMA VPS ${WH}  $COLOR1║ $NC"
-echo -e " $COLOR1║${NC} ${WH}[${COLOR1}06${WH}]${NC} ${COLOR1}• ${WH}GANTI TEMA WARNA ${WH}   ${WH}[${COLOR1}12${WH}]${NC} ${COLOR1}• ${WH}CHANGE CORE MENU${WH} $COLOR1║ $NC"
+echo -e " $COLOR1║${NC} ${WH}[${COLOR1}06${WH}]${NC} ${COLOR1}• ${WH}GANTI TEMA WARNA ${WH}   ${WH}[${COLOR1}12${WH}]${NC} ${COLOR1}• ${WH}CHANGE CORE MENU${WH}  $COLOR1║ $NC"
 echo -e " $COLOR1║${NC} ${WH}[${COLOR1}00${WH}]${NC} ${COLOR1}• ${WH}GO BACK $NC            ${WH}[${COLOR1}99${WH}]${NC} ${COLOR1}• ${WH}CLEAR RAM CACHE ${WH}     $COLOR1║ $NC"
 echo -e " $COLOR1╚══════════════════════════════════════════════════════╝${NC}"
 echo -e ""
@@ -1067,8 +1067,8 @@ case $opt in
 05 |5) clear ; limitspeed ; exit ;;
 06 |6) clear ; m-theme ; exit ;;
 07 |7) clear ; nano /etc/issue.net ; exit ;;
-08 |08) clear ; nameauthor ;;
-09 |09) clear ; m-bot2 ; exit ;;
+08 |8) clear ; nameauthor ;;
+09 |9) clear ; m-bot2 ; exit ;;
 10 |10) clear ; certv2ray ; exit ;;
 11 |11) clear ; gotopp ; exit ;;
 12 |12) clear ; coremenu ; exit ;;
