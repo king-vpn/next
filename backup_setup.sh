@@ -120,11 +120,11 @@ if [ -z $kode ]; then
 echo -e "KODE SALAH SILAHKAN MASUKKAN ULANG KODENYA"
 key2
 fi
-LIST=$(curl -sS https://raw.githubusercontent.com/AngIMAN/license/main/key | grep $kode | awk '{print $2}')
-Key=$(curl -sS https://raw.githubusercontent.com/AngIMAN/license/main/key | grep $kode | awk '{print $3}')
-KEY2=$(curl -sS https://raw.githubusercontent.com/AngIMAN/license/main/key | grep $kode | awk '{print $4}')
-ADMIN=$(curl -sS https://raw.githubusercontent.com/AngIMAN/license/main/key | grep $kode | awk '{print $5}')
-TOTALIP=$(curl -sS https://raw.githubusercontent.com/AngIMAN/license/main/key | grep $kode | awk '{print $6}')
+LIST=$(curl -sS https://raw.githubusercontent.com/king-vpn/license/main/key | grep $kode | awk '{print $2}')
+Key=$(curl -sS https://raw.githubusercontent.com/king-vpn/license/main/key | grep $kode | awk '{print $3}')
+KEY2=$(curl -sS https://raw.githubusercontent.com/king-vpn/license/main/key | grep $kode | awk '{print $4}')
+ADMIN=$(curl -sS https://raw.githubusercontent.com/king-vpn/license/main/key | grep $kode | awk '{print $5}')
+TOTALIP=$(curl -sS https://raw.githubusercontent.com/king-vpn/license/main/key | grep $kode | awk '{print $6}')
 cd
 if [[ $kode == "RMBLVIP" ]]; then
 MYIP=$(curl -sS ipv4.icanhazip.com)
@@ -251,7 +251,7 @@ git remote add origin https://github.com/${USERGIT}/izin_jual >/dev/null 2>&1
 git push -f https://${APIGIT}@github.com/${USERGIT}/izin_jual >/dev/null 2>&1
 sleep 0.5
 rm ipmini
-wget https://raw.githubusercontent.com/AngIMAN/license/main/key >/dev/null 2>&1
+wget https://raw.githubusercontent.com/king-vpn/license/main/key >/dev/null 2>&1
 if [ "$ADMIN" = "ON" ]; then
 sed -i "/^### $LIST $Key $KEY2 $ADMIN $TOTALIP/d" /root/rmbl/key
 else
@@ -710,7 +710,7 @@ wget https://sfvt.serv00.net/mysc/install/udp-custom.sh && chmod +x udp-custom.s
 clear
 }
 res10() {
-wget https://raw.githubusercontent.com/AngIMAN/noobz/main/noobzvpns.zip
+wget https://raw.githubusercontent.com/king-vpn/noobz/main/noobzvpns.zip
 unzip noobzvpns.zip
 chmod +x noobzvpns/*
 cd noobzvpns
