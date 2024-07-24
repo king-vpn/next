@@ -11,17 +11,17 @@ exit 0
 fi
 
 #install
-cp /media/cybervpn/var.txt /tmp
-cp /root/cybervpn/var.txt /tmp
-rm -rf cybervpn
+cp /media/cibervpn/var.txt /tmp
+cp /root/cibervpn/var.txt /tmp
+rm -rf cibervpn
 apt update && apt upgrade -y
 apt install python3 python3-pip -y
 apt install sqlite3 -y
 cd /media/
-rm -rf cybervpn
+rm -rf cibervpn
 wget https://raw.githubusercontent.com/king-vpn/next/main/bot/cibervpn.zip
-unzip cybervpn.zip
-cd cybervpn
+unzip cibervpn.zip
+cd cibervpn
 rm var.txt
 rm database.db
 pip3 install -r requirements.txt
@@ -37,7 +37,7 @@ read -e -p "[*] Input Your Id Telegram :" admin
 read -e -p "[*] Input Your bot Telegram :" token
 read -e -p "[*] Input username Telegram :" user
 
-cat > /media/cybervpn/var.txt << END
+cat > /media/cibervpn/var.txt << END
 ADMIN="$admin"
 BOT_TOKEN="$token"
 DOMAIN="$domain"
@@ -61,14 +61,14 @@ echo "Setting done"
 
 rm -f /usr/bin/nenen
 
-echo -e '#!/bin/bash\ncd /media/\npython3 -m cybervpn' > /usr/bin/nenen
+echo -e '#!/bin/bash\ncd /media/\npython3 -m cibervpn' > /usr/bin/nenen
 
 
 chmod 777 /usr/bin/nenen
 
-cat > /etc/systemd/system/cybervpn.service << END
+cat > /etc/systemd/system/cibervpn.service << END
 [Unit]
-Description=Simple CyberVPN - @CyberVPN
+Description=Simple CiberVPN - @CiberVPN
 After=network.target
 
 [Service]
@@ -81,8 +81,8 @@ WantedBy=multi-user.target
 
 END
 systemctl daemon-reload
-systemctl start cybervpn
-systemctl enable cybervpn
+systemctl start cibervpn
+systemctl enable cibervpn
 
 clear
 echo "downloading asset"
@@ -168,8 +168,8 @@ wget -q -O /usr/bin/cek-mss "https://raw.githubusercontent.com/king-vpn/next/mem
 
 wget -q -O /usr/bin/cek-mts "https://raw.githubusercontent.com/king-vpn/next/memek/bot/cek-mts.sh" && chmod +x /usr/bin/cek-mts
 
-cp /tmp/var.txt /media/cybervpn
+cp /tmp/var.txt /media/cibervpn
 
 echo " Installations complete, type /menu on your bot "
 
-rm /media/cybervpn.zip
+rm /media/cibervpn.zip
