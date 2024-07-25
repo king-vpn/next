@@ -1,5 +1,5 @@
 # Decrypted by LT | FUSCATOR
-# Github- https://github.com/LunaticTunnel/Absurd
+
 
 clear
 NC='\e[0m'
@@ -53,14 +53,14 @@ yell='\e[33m'
 BGX="\033[42m"
 END='\e[0m'
 AKTIF="VERIFIED"
-TOKEN="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"
-REPO="https://github.com/AngIMAN/izin_jual.git"
-EMAIL="imanfals51@gmail.com"
-USER="AngIMAN"
+TOKEN="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"
+REPO="https://github.com/king-vpn/izinsc.git"
+EMAIL="kingvpn293@gmail.com"
+USER="kingvpn77"
 add-ip() {
 TIMES="10"
-CHATID="6198984094"
-KEY="7339386828:AAGVP8M2ig8jmTw-vTh8ytKDmj4N8Aqtud4"
+CHATID="1793095437"
+KEY="7114745294:AAGkh5QKl0bx0q-qYgW44VUUJpa3RN6kvQc"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 today=`date -d "0 days" +"%Y-%m-%d"`
 git clone ${REPO} /root/permission/ &> /dev/null
@@ -68,7 +68,7 @@ clear
 echo -e "MASUKAN IP VPS YANG BELUM DI DAFTAR !"
 echo -e ""
 read -p "Input IP Address : " ip
-CLIENT_EXISTS=$(grep -w $ip /root/izin_jual/ip | wc -l)
+CLIENT_EXISTS=$(grep -w $ip /root/izinsc/ip | wc -l)
 if [[ ${CLIENT_EXISTS} == '1' ]]; then
 echo "IP Already Exist !"
 exit 0
@@ -87,20 +87,20 @@ echo -e ""
 read -p "Select Number 1 - 5 : " exp
 if [[ ${exp} == '1' ]]; then
 exp2=`date -d "30 days" +"%Y-%m-%d"`
-echo "### ${name} ${exp2} ${ip}" >> /root/izin_jual/ip
+echo "### ${name} ${exp2} ${ip}" >> /root/izinsc/ip
 elif [[ ${exp} == '2' ]]; then
 exp2=`date -d "60 days" +"%Y-%m-%d"`
-echo "### ${name} ${exp2} ${ip}" >> /root/izin_jual/ip
+echo "### ${name} ${exp2} ${ip}" >> /root/izinsc/ip
 elif [[ ${exp} == '3' ]]; then
 exp2=`date -d "90 days" +"%Y-%m-%d"`
-echo "### ${name} ${exp2} ${ip}" >> /root/izin_jual/ip
+echo "### ${name} ${exp2} ${ip}" >> /root/izinsc/ip
 elif [[ ${exp} == '4' ]]; then
 exp2=`date -d "12000 days" +"%Y-%m-%d"`
-echo "### ${name} ${exp2} ${ip}" >> /root/izin_jual/ip
+echo "### ${name} ${exp2} ${ip}" >> /root/izinsc/ip
 elif [[ ${exp} == '5' ]]; then
 read -p "Input Expired Days : " exp11
 exp2=`date -d "$exp11 days" +"%Y-%m-%d"`
-echo "### ${name} ${exp2} ${ip}" >> /root/izin_jual/ip
+echo "### ${name} ${exp2} ${ip}" >> /root/izinsc/ip
 fi
 cd /root/permission
 git config --global user.email "${EMAIL}" &> /dev/null
@@ -110,8 +110,8 @@ git init &> /dev/null
 git add . &> /dev/null
 git commit -m m &> /dev/null
 git branch -M main &> /dev/null
-git remote add origin https://raw.githubusercontent.com/AngIMAN/izin_jual
-git push -f https://${TOKEN}@github.com/AngIMAN/izin_jual.git &> /dev/null
+git remote add origin https://raw.githubusercontent.com/AngIMAN/izinsc
+git push -f https://${TOKEN}@github.com/king-vpn/izinsc.git &> /dev/null
 rm -rf /root/permission
 clear
 sleep 1
@@ -159,8 +159,8 @@ curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$T
 }
 del-ip() {
 TIMES="10"
-CHATID="6198984094"
-KEY="7339386828:AAGVP8M2ig8jmTw-vTh8ytKDmj4N8Aqtud4"
+CHATID="1793095437"
+KEY="7114745294:AAGkh5QKl0bx0q-qYgW44VUUJpa3RN6kvQc"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 rm -rf /root/permission
 git clone ${REPO} /root/permission/ &> /dev/null
@@ -169,16 +169,16 @@ echo ""
 echo -e "${CYAN}┌───────────────────────────────┐$NC"
 echo -e "${CYAN}│${NC}${g} .::.${NC}    LIST IP VPS     ${NC}${g}.::. $NC"
 echo -e "${CYAN}└───────────────────────────────┘$NC"
-grep -E "^###" "/root/izin_jual/ip" | cut -d ' ' -f 2-6 | column -t | sort | uniq
-grep -E "^#&"  "/root/izin_jual/ip" | cut -d ' ' -f 2-6 | column -t | sort | uniq
+grep -E "^###" "/root/izinsc/ip" | cut -d ' ' -f 2-6 | column -t | sort | uniq
+grep -E "^#&"  "/root/izinsc/ip" | cut -d ' ' -f 2-6 | column -t | sort | uniq
 echo -e " ${CYAN}────────────────────────────────$NC"
 read -p "Input IP Address To Delete : " ipdel
-name=$(cat /root/izin_jual/ip | grep $ipdel | awk '{print $2}')
-exp=$(cat /root/izin_jual/ip | grep $ipdel | awk '{print $3}')
+name=$(cat /root/izinsc/ip | grep $ipdel | awk '{print $2}')
+exp=$(cat /root/izinsc/ip | grep $ipdel | awk '{print $3}')
 if [[ ${exp} == 'Lifetime' ]]; then
-sed -i "/^#&   $name   $exp $ipdel/,/^},{/d" /root/izin_jual/ip
+sed -i "/^#&   $name   $exp $ipdel/,/^},{/d" /root/izinsc/ip
 else
-sed -i "/^### $name $exp $ipdel/,/^},{/d" /root/izin_jual/ip
+sed -i "/^### $name $exp $ipdel/,/^},{/d" /root/izinsc/ip
 fi
 cd /root/permission
 git config --global user.email "${EMAIL}" &> /dev/null
@@ -188,8 +188,8 @@ git init &> /dev/null
 git add . &> /dev/null
 git commit -m m &> /dev/null
 git branch -M main &> /dev/null
-git remote add origin https://raw.githubusercontent.com/AngIMAN/izin_jual
-git push -f https://${TOKEN}@github.com/AngIMAN/izin_jual.git &> /dev/null
+git remote add origin https://raw.githubusercontent.com/king-vpn/izinsc
+git push -f https://${TOKEN}@github.com/king-vpn/izinsc.git &> /dev/null
 rm -rf /root/permission
 clear
 sleep 1
@@ -221,8 +221,8 @@ curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$T
 }
 renew-ip() {
 TIMES="10"
-CHATID="6198984094"
-KEY="7339386828:AAGVP8M2ig8jmTw-vTh8ytKDmj4N8Aqtud4"
+CHATID="1793095437"
+KEY="7114745294:AAGkh5QKl0bx0q-qYgW44VUUJpa3RN6kvQc"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 rm -rf /root/permission
 git clone ${REPO} /root/permission/ &> /dev/null
@@ -230,20 +230,20 @@ clear
 echo -e "${CYAN}  ==================================$NC"
 echo -e "${grenbo}            RENEW IP VPS $NC"
 echo -e "${CYAN}  ==================================$NC"
-grep -E "^###" "/root/izin_jual/ip" | cut -d ' ' -f 2-6 | column -t | sort | uniq
+grep -E "^###" "/root/izinsc/ip" | cut -d ' ' -f 2-6 | column -t | sort | uniq
 echo -e "${CYAN}  ──────────────────────────────────$NC"
 echo ""
 read -p "  Input IP Address To Renew : " ipdel
 read -p "  Input Days  : " days
-name=$(cat /root/izin_jual/ip | grep $ipdel | awk '{print $2}')
-exp=$(cat /root/izin_jual/ip | grep $ipdel | awk '{print $3}')
+name=$(cat /root/izinsc/ip | grep $ipdel | awk '{print $2}')
+exp=$(cat /root/izinsc/ip | grep $ipdel | awk '{print $3}')
 now=$(date +%Y-%m-%d)
 d1=$(date -d "$exp" +%s)
 d2=$(date -d "$now" +%s)
 exp2=$(( (d1 - d2) / 86400 ))
 exp3=$(($exp2 + $days))
 exp4=`date -d "$exp3 days" +"%Y-%m-%d"`
-sed -i "s/### $name $exp $ipdel/### $name $exp4 $ipdel/g" /root/izin_jual/ip
+sed -i "s/### $name $exp $ipdel/### $name $exp4 $ipdel/g" /root/izinsc/ip
 cd /root/permission
 git config --global user.email "${EMAIL}" &> /dev/null
 git config --global user.name "${USER}" &> /dev/null
@@ -252,8 +252,8 @@ git init &> /dev/null
 git add . &> /dev/null
 git commit -m m &> /dev/null
 git branch -M main &> /dev/null
-git remote add origin https://raw.githubusercontent.com/AngIMAN/izin_jual
-git push -f https://${TOKEN}@github.com/AngIMAN/izin_jual.git &> /dev/null
+git remote add origin https://raw.githubusercontent.com/king-vpn/izinsc
+git push -f https://${TOKEN}@github.com/king-vpn/izinsc.git &> /dev/null
 rm -rf /root/permission
 clear
 sleep 1
