@@ -27,7 +27,7 @@ checking_sc() {
         echo -e "   \033[0;33mYour VPS${NC} $ipsaya \033[0;33mHas been Banned${NC}"
         echo -e "     \033[0;33mBuy access permissions for scripts${NC}"
         echo -e "             \033[0;33mContact Admin :${NC}"
-        echo -e "     \033[0;36mTelegram${NC}: https://t.me/MasAnsor wa.me/+6281315010096"
+        echo -e "     \033[0;36mTelegram${NC}: https://t.me/MasAnsor"
         echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
         exit
     fi
