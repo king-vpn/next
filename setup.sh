@@ -337,7 +337,7 @@ clear
 echo -e  "${BIBlue}╭══════════════════════════════════════════╮${NC}"
 echo -e  "${BIBlue}│              \033[1;37mTERIMA KASIH                ${BIBlue}│${NC}"
 echo -e  "${BIBlue}│         \033[1;37mSUDAH MENGGUNAKAN SCRIPT         ${BIBlue}│${NC}"
-echo -e  "${BIBlue}│                \033[1;37m KING VPN                 ${BIBlue}│${NC}"
+echo -e  "${BIBlue}│                \033[1;37m VPN EXPRESS              ${BIBlue}│${NC}"
 echo -e  "${BIBlue}╰══════════════════════════════════════════╯${NC}"
 echo " "
 until [[ $dnss =~ ^[a-zA-Z0-9_.-]+$ ]]; do 
@@ -371,15 +371,15 @@ fi
 if [[ $domain == "2" ]]; then
 clear
 echo -e "${BIBlue}╭══════════════════════════════════════════╮${NC}"
-echo -e "${BIBlue}│ \033[1;37mPlease select a your Choice to Set Domain${BIBlue}│${NC}"
+echo -e "${BIBlue}│ \033[1;37m    Pilih Sub-Domain           ${BIBlue}│${NC}"
 echo -e "${BIBlue}╰══════════════════════════════════════════╯${NC}"
 echo -e " "
 echo -e "${BIBlue}╭══════════════════════════════════════════╮${NC}"
 echo -e "${BIBlue}│  [ 1 ]  \033[1;37mDomain xxxx.vpn-express.my.id          ${NC}"
-echo -e "${BIBlue}│  [ 2 ]  \033[1;37mDomain xxxx.vvpnstore.my.id          ${NC}"
-echo -e "${BIBlue}│  [ 3 ]  \033[1;37mDomain xxxx.aivpn.my.id          ${NC}"
-echo -e "${BIBlue}│  [ 4 ]  \033[1;37mDomain xxxx.aivpn.biz.id          ${NC}"
-echo -e "${BIBlue}│  [ 5 ]  \033[1;37mDomain xxxx.vpnx.my.id          ${NC}"
+echo -e "${BIBlue}│  [ 1 ]  \033[1;37mDomain xxxx.vvpnstore.my.id          ${NC}"
+echo -e "${BIBlue}│  [ 1 ]  \033[1;37mDomain xxxx.aivpn.my.id          ${NC}"
+echo -e "${BIBlue}│  [ 1 ]  \033[1;37mDomain xxxx.aivpn.biz.id          ${NC}"
+echo -e "${BIBlue}│  [ 1 ]  \033[1;37mDomain xxxx.vpnx.my.id          ${NC}"
 echo -e "${BIBlue}╰══════════════════════════════════════════╯${NC}"
 echo -e "${BIBlue} kata (xxxx) nanti akan diganti dengan nama kalian${NC}"
 until [[ $domain2 =~ ^[1-5]+$ ]]; do 
@@ -540,7 +540,7 @@ clear
 echo -e  "${BIBlue}╭══════════════════════════════════════════╮${NC}"
 echo -e  "${BIBlue}│              \033[1;37mTERIMA KASIH                ${BIBlue}│${NC}"
 echo -e  "${BIBlue}│         \033[1;37mSUDAH MENGGUNAKAN SCRIPT         ${BIBlue}│${NC}"
-echo -e  "${BIBlue}│                \033[1;37m KING VPN                 ${BIBlue}│${NC}"
+echo -e  "${BIBlue}│                \033[1;37m VPN EXPRESS              ${BIBlue}│${NC}"
 echo -e  "${BIBlue}╰══════════════════════════════════════════╯${NC}"
 echo " "
 until [[ $dns1 =~ ^[a-zA-Z0-9_.-]+$ ]]; do 
@@ -555,7 +555,7 @@ echo ""
 echo -e  "${BIBlue}╭══════════════════════════════════════════╮${NC}"
 echo -e  "${BIBlue}│              \033[1;37mTERIMA KASIH                ${BIBlue}│${NC}"
 echo -e  "${BIBlue}│         \033[1;37mSUDAH MENGGUNAKAN SCRIPT         ${BIBlue}│${NC}"
-echo -e  "${BIBlue}│                \033[1;37m KING VPN                 ${BIBlue}│${NC}"
+echo -e  "${BIBlue}│                \033[1;37m VPN EXPRESS              ${BIBlue}│${NC}"
 echo -e  "${BIBlue}╰══════════════════════════════════════════╯${NC}"
 echo " "
 until [[ $dns2 =~ ^[a-zA-Z0-9_.-]+$ ]]; do
@@ -685,11 +685,11 @@ echo -e "${BIBlue}╰═══════════════════�
 wget https://raw.githubusercontent.com/king-vpn/next/main/menu/update.sh && chmod +x update.sh && ./update.sh
 clear
 
-echo -e "${BIBlue}╭══════════════════════════════════════════╮${NC}"
-echo -e "${BIBlue}│ ${BGCOLOR}           DOWNLOAD SLOW DNS            ${NC}${BIBlue} │${NC}"
-echo -e "${BIBlue}╰══════════════════════════════════════════╯${NC}"
-wget https://raw.githubusercontent.com/king-vpn/next/main/slowdns/installsl.sh && chmod +x installsl.sh && bash installsl.sh
-clear
+#echo -e "${BIBlue}╭══════════════════════════════════════════╮${NC}"
+#echo -e "${BIBlue}│ ${BGCOLOR}           DOWNLOAD SLOW DNS            ${NC}${BIBlue} │${NC}"
+#echo -e "${BIBlue}╰══════════════════════════════════════════╯${NC}"
+#wget https://raw.githubusercontent.com/king-vpn/next/main/slowdns/installsl.sh && chmod +x installsl.sh && bash installsl.sh
+#clear
 
 
 echo -e "${BIBlue}╭══════════════════════════════════════════╮${NC}"
@@ -743,7 +743,7 @@ EXP=$(( (d1 - d2) / 86400 ))
 
 TEXT="
 <code>━━━━━━━━━━━━━━━━━━━━</code>
-<code>⚠️ AUTOSCRIPT PREMIUM NEW ⚠️</code>
+<code>⚠️ AUTOSCRIPT PREMIUM ⚠️</code>
 <code>━━━━━━━━━━━━━━━━━━━━</code>
 <code>NAME : </code><code>${author}</code>
 <code>TIME : </code><code>${TIME} WIB</code>
@@ -755,7 +755,7 @@ TEXT="
 <code>EXP SCRIPT : </code><code>$EXP Days</code>
 <code>━━━━━━━━━━━━━━━━━━━━</code>
 <i> Notifikasi Installer Script...</i>
-"'&reply_markup={"inline_keyboard":[[{"text":"ᴏʀᴅᴇʀ","url":"https://t.me/MasAnsor wa.me/+6281315010096"},{"text":"GRUP","url":"https://t.me/aiyavpnstore"}]]}'
+"'&reply_markup={"inline_keyboard":[[{"text":"ᴏʀᴅᴇʀ","url":"https://t.me/AimanVpnExpress wa.me/+628981874211"},{"text":"GRUP","url":"https://t.me/cloudvpnpremium"}]]}'
 curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 clear
 }
