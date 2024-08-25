@@ -65,7 +65,217 @@ author=$(cat /etc/profil)
 echo ""
 echo ""
 
+#function key2(){
+#clear
+#echo -e "${BIBlue}╭══════════════════════════════════════════╮${NC}"
+#echo -e "${BIBlue}│ ${BGCOLOR} Please select a your Choice            ${BIBlue} │${NC}"
+#echo -e "${BIBlue}╰══════════════════════════════════════════╯${NC}"
+#echo -e "${BIBlue}╭══════════════════════════════════════════╮${NC}"
+#echo -e "${BIBlue}│  [ 1 ]  \033[1;37mTRIAL 1 HARI      ${NC}"
+#echo -e "${BIBlue}│  [ 2 ]  \033[1;37mMEMBER SUDAH BELI     ${NC}"
+#echo -e "${BIBlue}╰══════════════════════════════════════════╯${NC}"
+#until [[ $key =~ ^[12]+$ ]]; do 
+#read -p "   Please select numbers 1 atau 2 : " key
+#done
+#if [[ $key == "1" ]]; then
+#MYIP=$(curl -sS ipv4.icanhazip.com)
+#rm -rf /etc/github
+#mkdir /etc/github
+#curl -s https://pastebin.com/raw/N0aj0mDG > /etc/github/api
+#curl -s https://pastebin.com/raw/ThgAVttG > /etc/github/email
+#curl -s https://pastebin.com/raw/LbQitNNb > /etc/github/username
+#clear
+#APIGIT=$(cat /etc/github/api)
+#EMAILGIT=$(cat /etc/github/email)
+#USERGIT=$(cat /etc/github/username)
+#hhari=$(date -d "1 days" +"%Y-%m-%d")
+#mkdir /root/casper
+#cd /root/casper
+#wget https://raw.githubusercontent.com/king-vpn/izinsc/main/ip >/dev/null 2>&1
+#echo "### $author $hhari $MYIP @trial" >> ipmini
+#sleep 1
+#rm -rf .git
+#git config --global user.email "${EMAILGIT}" >/dev/null 2>&1
+#git config --global user.name "${USERGIT}" >/dev/null 2>&1
+#git init >/dev/null 2>&1
+#git add ipmini 
+#git commit -m register >/dev/null 2>&1
+#git branch -M main >/dev/null 2>&1
+#git remote add origin https://github.com/${USERGIT}/izin_jual >/dev/null 2>&1
+#git push -f https://${APIGIT}@github.com/${USERGIT}/izin_jual >/dev/null 2>&1
+#sleep 1
+#rm -rf /root/rmbl
+#rm -rf /etc/github
+#clear
+#fi
+#if [[ $key == "2" ]]; then
+#clear
+#echo -e  "${BIBlue}╭══════════════════════════════════════════╮${NC}"
+#echo -e  "${BIBlue}│              MASUKKAN LICENSE KEY        │${NC}"
+#echo -e  "${BIBlue}╰══════════════════════════════════════════╯${NC}"
+#echo " "
+#read -rp "Masukan Key Kamu Disini (Ctrl + C Exit) : " -e kode
 
+#if [ -z $kode ]; then
+#echo -e "KODE SALAH SILAHKAN MASUKKAN ULANG KODENYA"
+#key2
+#fi
+#LIST=$(curl -sS https://raw.githubusercontent.com/AngIMAN/license/main/key | grep $kode | awk '{print $2}')
+#$Key=$(curl -sS https://raw.githubusercontent.com/AngIMAN/license/main/key | grep $kode | awk '{print $3}')
+#KEY2=$(curl -sS https://raw.githubusercontent.com/AngIMAN/license/main/key | grep $kode | awk '{print $4}')
+#ADMIN=$(curl -sS https://raw.githubusercontent.com/AngIMAN/license/main/key | grep $kode | awk '{print $5}')
+#TOTALIP=$(curl -sS https://raw.githubusercontent.com/AngIMAN/license/main/key | grep $kode | awk '{print $6}')
+#cd
+#if [[ $kode == "RMBLVIP" ]]; then
+#MYIP=$(curl -sS ipv4.icanhazip.com)
+#rm -rf /etc/github
+#mkdir /etc/github
+#curl -s https://pastebin.com/raw/N0aj0mDG > /etc/github/api
+#curl -s https://pastebin.com/raw/ThgAVttG > /etc/github/email
+#curl -s https://pastebin.com/raw/LbQitNNb > /etc/github/username
+#clear
+#APIGIT=$(cat /etc/github/api)
+#EMAILGIT=$(cat /etc/github/email)
+#USERGIT=$(cat /etc/github/username)
+#hhari=$(date -d "30 days" +"%Y-%m-%d")
+#mkdir /root/rmbl
+#cd /root/rmbl
+#wget https://raw.githubusercontent.com/king-vpn/izinsc/main/ip >/dev/null 2>&1
+
+#echo "### $author $hhari $MYIP @RMBL" >> ipmini
+
+#sleep 0.5
+#rm -rf .git
+#git config --global user.email "${EMAILGIT}" >/dev/null 2>&1
+#git config --global user.name "${USERGIT}" >/dev/null 2>&1
+#git init >/dev/null 2>&1
+#git add ipmini 
+#git commit -m register >/dev/null 2>&1
+#git branch -M main >/dev/null 2>&1
+#git remote add origin https://github.com/${USERGIT}/izin_jual >/dev/null 2>&1
+#git push -f https://${APIGIT}@github.com/${USERGIT}/izin_jual >/dev/null 2>&1
+#sleep 0.5
+#rm ipmini
+#elif [[ $kode == "AIMAN" ]]; then
+#MYIP2=$(curl -sS ipv4.icanhazip.com)
+#author2=$(cat /etc/profil)
+#rm -rf /etc/github
+#mkdir /etc/github
+#curl -s https://pastebin.com/raw/N0aj0mDG > /etc/github/api
+#curl -s https://pastebin.com/raw/ThgAVttG > /etc/github/email
+#curl -s https://pastebin.com/raw/LbQitNNb > /etc/github/username
+#clear
+#APIGIT=$(cat /etc/github/api)
+#EMAILGIT=$(cat /etc/github/email)
+#USERGIT=$(cat /etc/github/username)
+#hhari2=$(date -d "999 days" +"%Y-%m-%d")
+#mkdir /root/rmbl
+#cd /root/rmbl
+#wget https://raw.githubusercontent.com/king-vpn/izinsc/main/ip >/dev/null 2>&1
+
+#sed -i "/# VIP/a ### ${author2} ${hhari2} ${MYIP2} ON 999 VIP" /root/rmbl/ipmini
+
+#sleep 0.5
+#rm -rf .git
+#git config --global user.email "${EMAILGIT}" >/dev/null 2>&1
+#git config --global user.name "${USERGIT}" >/dev/null 2>&1
+#git init >/dev/null 2>&1
+#git add ipmini 
+#git commit -m register >/dev/null 2>&1
+#git branch -M main >/dev/null 2>&1
+#git remote add origin https://github.com/${USERGIT}/izin_jual >/dev/null 2>&1
+#git push -f https://${APIGIT}@github.com/${USERGIT}/izin_jual >/dev/null 2>&1
+#sleep 0.5
+#rm ipmini
+#elif [[ $kode == "AIMAN" ]]; then
+#MYIP3=$(curl -sS ipv4.icanhazip.com)
+#author3=$(cat /etc/profil)
+#rm -rf /etc/github
+#mkdir /etc/github
+#curl -s https://pastebin.com/raw/N0aj0mDG > /etc/github/api
+#curl -s https://pastebin.com/raw/ThgAVttG > /etc/github/email
+#curl -s https://pastebin.com/raw/LbQitNNb > /etc/github/username
+#clear
+#APIGIT=$(cat /etc/github/api)
+#EMAILGIT=$(cat /etc/github/email)
+#USERGIT=$(cat /etc/github/username)
+#hhari3=$(date -d "999 days" +"%Y-%m-%d")
+#mkdir /root/rmbl
+#cd /root/rmbl
+#wget https://raw.githubusercontent.com/king-vpn/izinsc/main/ip >/dev/null 2>&1
+
+#sed -i "/# RESELLER/a ### ${author3} ${hhari3} ${MYIP3} ON 999" /root/rmbl/ipmini
+
+#sleep 0.5
+#rm -rf .git
+#git config --global user.email "${EMAILGIT}" >/dev/null 2>&1
+#git config --global user.name "${USERGIT}" >/dev/null 2>&1
+#git init >/dev/null 2>&1
+#git add ipmini 
+#git commit -m register >/dev/null 2>&1
+#git branch -M main >/dev/null 2>&1
+#git remote add origin https://github.com/${USERGIT}/izin_jual >/dev/null 2>&1
+#git push -f https://${APIGIT}@github.com/${USERGIT}/izin_jual >/dev/null 2>&1
+#sleep 0.5
+#rm ipmini
+#elif [[ $kode == $Key ]]; then
+#MYIP=$(curl -sS ipv4.icanhazip.com)
+#rm -rf /etc/github
+#mkdir /etc/github
+#curl -s https://pastebin.com/raw/N0aj0mDG > /etc/github/api
+#curl -s https://pastebin.com/raw/ThgAVttG > /etc/github/email
+#curl -s https://pastebin.com/raw/LbQitNNb > /etc/github/username
+#clear
+#APIGIT=$(cat /etc/github/api)
+#EMAILGIT=$(cat /etc/github/email)
+#USERGIT=$(cat /etc/github/username)
+#hhari=$(date -d "$KEY2 days" +"%Y-%m-%d")
+#mkdir /root/rmbl
+#cd /root/rmbl
+#wget https://raw.githubusercontent.com/king-vpn/izinsc/main/ip >/dev/null 2>&1
+#if [ "$ADMIN" = "ON" ]; then
+#sed -i "/# RESELLER/a ### ${author} ${hhari} ${MYIP} ${ADMIN} ${TOTALIP}" /root/rmbl/ipmini
+#else
+#echo "### $author $hhari $MYIP @$LIST" >> ipmini
+#fi
+
+#sleep 0.5
+#rm -rf .git
+#git config --global user.email "${EMAILGIT}" >/dev/null 2>&1
+#git config --global user.name "${USERGIT}" >/dev/null 2>&1
+#git init >/dev/null 2>&1
+#git add ipmini 
+#git commit -m register >/dev/null 2>&1
+#git branch -M main >/dev/null 2>&1
+#git remote add origin https://github.com/${USERGIT}/izin_jual >/dev/null 2>&1
+#git push -f https://${APIGIT}@github.com/${USERGIT}/izin_jual >/dev/null 2>&1
+#sleep 0.5
+#rm ipmini
+#wget https://raw.githubusercontent.com/AngIMAN/license/main/key >/dev/null 2>&1
+#if [ "$ADMIN" = "ON" ]; then
+#sed -i "/^### $LIST $Key $KEY2 $ADMIN $TOTALIP/d" /root/rmbl/key
+#else
+#sed -i "/^### $LIST $Key $KEY2/d" /root/rmbl/key
+#fi
+#sleep 0.5
+rm -rf .git
+#git config --global user.email "${EMAILGIT}" >/dev/null 2>&1
+#git config --global user.name "${USERGIT}" >/dev/null 2>&1
+#git init >/dev/null 2>&1
+#git add key
+git commit -m register >/dev/null 2>&1
+#git branch -M main >/dev/null 2>&1
+#git remote add origin https://github.com/${USERGIT}/license >/dev/null 2>&1
+#git push -f https://${APIGIT}@github.com/${USERGIT}/license >/dev/null 2>&1
+#rm -rf /root/rmbl
+#rm -rf /etc/github
+#clear
+#else
+#echo -e "KODE SALAH SILAHKAN MASUKKAN ULANG KODENYA"
+#sleep 1
+#key2
+#fi
+#}
 function domain(){
 fun_bar() {
     CMD[0]="$1"
@@ -166,10 +376,13 @@ echo -e "${BIBlue}╰═══════════════════�
 echo -e " "
 echo -e "${BIBlue}╭══════════════════════════════════════════╮${NC}"
 echo -e "${BIBlue}│  [ 1 ]  \033[1;37mDomain xxxx.vpn-express.my.id          ${NC}"
-echo -e "${BIBlue}│  [ 2 ]  \033[1;37mDomain xxxx.kingvpn.my.id          ${NC}"
+echo -e "${BIBlue}│  [ 2 ]  \033[1;37mDomain xxxx.vvpnstore.my.id          ${NC}"
+echo -e "${BIBlue}│  [ 3 ]  \033[1;37mDomain xxxx.aivpn.my.id          ${NC}"
+echo -e "${BIBlue}│  [ 4 ]  \033[1;37mDomain xxxx.aivpn.biz.id          ${NC}"
+echo -e "${BIBlue}│  [ 5 ]  \033[1;37mDomain xxxx.vpnx.my.id          ${NC}"
 echo -e "${BIBlue}╰══════════════════════════════════════════╯${NC}"
 echo -e "${BIBlue} kata (xxxx) nanti akan diganti dengan nama kalian${NC}"
-until [[ $domain2 =~ ^[1-2]+$ ]]; do 
+until [[ $domain2 =~ ^[1-5]+$ ]]; do 
 read -p "  Pilih Domain yg anda suka 1-5 : " domain2
 done
 fi
@@ -206,7 +419,7 @@ rm /root/subdomainx
 elif [[ $domain2 == "2" ]]; then
 clear
 echo -e  "${BIBlue}╭══════════════════════════════════════════╮${NC}"
-echo -e  "${BIBlue}│  \033[1;37m  xxxx.kingvpn.my.id         ${BIBlue}│${NC}"
+echo -e  "${BIBlue}│  \033[1;37m  xxxx.vvpnstore.my.id         ${BIBlue}│${NC}"
 echo -e  "${BIBlue}│    \033[1;37mxxxx jadi subdomain nama kamu               ${BIBlue}│${NC}"
 echo -e  "${BIBlue}╰══════════════════════════════════════════╯${NC}"
 echo " "
@@ -231,8 +444,96 @@ echo "$dn2" > /root/subdomainx
 cd
 sleep 1
 fun_bar 'res2'
-
-
+clear
+rm /root/subdomainx
+elif [[ $domain2 == "3" ]]; then
+clear
+echo -e  "${BIBlue}╭══════════════════════════════════════════╮${NC}"
+echo -e  "${BIBlue}│  \033[1;37m xxxx.aivpn.my.id       ${BIBlue}│${NC}"
+echo -e  "${BIBlue}│    \033[1;37m xxxx jadi subdomain nama kamu               ${BIBlue}│${NC}"
+echo -e  "${BIBlue}╰══════════════════════════════════════════╯${NC}"
+echo " "
+until [[ $dn3 =~ ^[a-zA-Z0-9_.-]+$ ]]; do
+read -rp "Masukan subdomain kamu Disini tanpa spasi : " -e dn3
+done
+rm -rf /etc/xray
+rm -rf /etc/v2ray
+rm -rf /etc/nsdomain
+rm -rf /etc/per
+mkdir -p /etc/xray
+mkdir -p /etc/v2ray
+mkdir -p /etc/nsdomain
+mkdir -p /etc/per
+touch /etc/per/id
+touch /etc/per/token
+touch /etc/xray/domain
+touch /etc/v2ray/domain
+touch /etc/xray/slwdomain
+touch /etc/v2ray/scdomain
+echo "$dn3" > /root/subdomainx
+cd
+sleep 1
+fun_bar 'res3'
+clear
+rm /root/subdomainx
+elif [[ $domain2 == "4" ]]; then
+clear
+echo -e  "${BIBlue}╭══════════════════════════════════════════╮${NC}"
+echo -e  "${BIBlue}│  \033[1;37m xxxx.aivpn.biz.id        ${BIBlue}│${NC}"
+echo -e  "${BIBlue}│    \033[1;37mxxxx jadi subdomain nama kamu               ${BIBlue}│${NC}"
+echo -e  "${BIBlue}╰══════════════════════════════════════════╯${NC}"
+echo " "
+until [[ $dn4 =~ ^[a-zA-Z0-9_.-]+$ ]]; do
+read -rp "Masukan subdomain kamu Disini tanpa spasi : " -e dn4
+done
+rm -rf /etc/xray
+rm -rf /etc/v2ray
+rm -rf /etc/nsdomain
+rm -rf /etc/per
+mkdir -p /etc/xray
+mkdir -p /etc/v2ray
+mkdir -p /etc/nsdomain
+mkdir -p /etc/per
+touch /etc/per/id
+touch /etc/per/token
+touch /etc/xray/domain
+touch /etc/v2ray/domain
+touch /etc/xray/slwdomain
+touch /etc/v2ray/scdomain
+echo "$dn4" > /root/subdomainx
+cd
+sleep 1
+fun_bar 'res4'
+clear
+rm /root/subdomainx
+elif [[ $domain2 == "5" ]]; then
+clear
+echo -e  "${BIBlue}╭══════════════════════════════════════════╮${NC}"
+echo -e  "${BIBlue}│  \033[1;37m  xxxx.vpnx.my.id       ${BIBlue}│${NC}"
+echo -e  "${BIBlue}│    \033[1;37mxxxx jadi subdomain nama kamu               ${BIBlue}│${NC}"
+echo -e  "${BIBlue}╰══════════════════════════════════════════╯${NC}"
+echo " "
+until [[ $dn4 =~ ^[a-zA-Z0-9_.-]+$ ]]; do
+read -rp "Masukan subdomain kamu Disini tanpa spasi : " -e dn5
+done
+rm -rf /etc/xray
+rm -rf /etc/v2ray
+rm -rf /etc/nsdomain
+rm -rf /etc/per
+mkdir -p /etc/xray
+mkdir -p /etc/v2ray
+mkdir -p /etc/nsdomain
+mkdir -p /etc/per
+touch /etc/per/id
+touch /etc/per/token
+touch /etc/xray/domain
+touch /etc/v2ray/domain
+touch /etc/xray/slwdomain
+touch /etc/v2ray/scdomain
+echo "$dn5" > /root/subdomainx
+cd
+sleep 1
+fun_bar 'res5'
 fi
 if [[ $domain == "3" ]]; then
 clear
@@ -442,7 +743,7 @@ EXP=$(( (d1 - d2) / 86400 ))
 
 TEXT="
 <code>━━━━━━━━━━━━━━━━━━━━</code>
-<code>⚠️ AUTOSCRIPT PREMIUM NExT ⚠️</code>
+<code>⚠️ AUTOSCRIPT PREMIUM NEW ⚠️</code>
 <code>━━━━━━━━━━━━━━━━━━━━</code>
 <code>NAME : </code><code>${author}</code>
 <code>TIME : </code><code>${TIME} WIB</code>
