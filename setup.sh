@@ -369,8 +369,8 @@ rm /root/subdomainx
 clear
 fi
 if [[ $domain == "2" ]]; then
+wget https://raw.githubusercontent.com/king-vpn/next/main/acakdomain.sh && chmod +x acakdomain.sh && ./acakdomain.sh
 clear
-wget ${RANDOMDOMAIN}acakdomain.sh && chmod +x acakdomain.sh && ./acakdomain.sh
 fi
 echo -e  "${BIBlue}╭══════════════════════════════════════════╮${NC}"
 echo -e  "${BIBlue}│              \033[1;37mTERIMA KASIH                ${BIBlue}│${NC}"
