@@ -370,31 +370,16 @@ clear
 fi
 if [[ $domain == "2" ]]; then
 clear
-echo -e "${BIBlue}╭══════════════════════════════════════════╮${NC}"
-echo -e "${BIBlue}│ \033[1;37mPlease select a your Choice to Set Domain${BIBlue}│${NC}"
-echo -e "${BIBlue}╰══════════════════════════════════════════╯${NC}"
-echo -e " "
-echo -e "${BIBlue}╭══════════════════════════════════════════╮${NC}"
-echo -e "${BIBlue}│  [ 1 ]  \033[1;37mDomain xxxx.vpn-express.my.id          ${NC}"
-echo -e "${BIBlue}│  [ 2 ]  \033[1;37mDomain xxxx.vvpnstore.my.id          ${NC}"
-echo -e "${BIBlue}│  [ 3 ]  \033[1;37mDomain xxxx.aivpn.my.id          ${NC}"
-echo -e "${BIBlue}│  [ 4 ]  \033[1;37mDomain xxxx.aivpn.biz.id          ${NC}"
-echo -e "${BIBlue}│  [ 5 ]  \033[1;37mDomain xxxx.vpnx.my.id          ${NC}"
-echo -e "${BIBlue}╰══════════════════════════════════════════╯${NC}"
-echo -e "${BIBlue} kata (xxxx) nanti akan diganti dengan nama kalian${NC}"
-until [[ $domain2 =~ ^[1-5]+$ ]]; do 
-read -p "  Pilih Domain yg anda suka 1-5 : " domain2
-done
+wget ${RANDOMDOMAIN}acakdomain.sh && chmod +x acakdomain.sh && ./acakdomain.sh
 fi
-if [[ $domain2 == "1" ]]; then
-clear
 echo -e  "${BIBlue}╭══════════════════════════════════════════╮${NC}"
-echo -e  "${BIBlue}│  \033[1;37m xxxx.vpn-express.my.id        ${BIBlue}│${NC}"
-echo -e  "${BIBlue}│    \033[1;37mxxxx jadi subdomain nama kamu               ${BIBlue}│${NC}"
+echo -e  "${BIBlue}│              \033[1;37mTERIMA KASIH                ${BIBlue}│${NC}"
+echo -e  "${BIBlue}│         \033[1;37mSUDAH MENGGUNAKAN SCRIPT         ${BIBlue}│${NC}"
+echo -e  "${BIBlue}│                \033[1;37m KING VPN                 ${BIBlue}│${NC}"
 echo -e  "${BIBlue}╰══════════════════════════════════════════╯${NC}"
 echo " "
-until [[ $dn1 =~ ^[a-zA-Z0-9_.-]+$ ]]; do
-read -rp "Masukan subdomain kamu Disini tanpa spasi : " -e dn1
+until [[ $dnss =~ ^[a-zA-Z0-9_.-]+$ ]]; do 
+read -rp "Masukan domain kamu Disini : " -e dnss
 done
 rm -rf /etc/xray
 rm -rf /etc/v2ray
@@ -403,138 +388,23 @@ rm -rf /etc/per
 mkdir -p /etc/xray
 mkdir -p /etc/v2ray
 mkdir -p /etc/nsdomain
-mkdir -p /etc/per
-touch /etc/per/id
-touch /etc/per/token
 touch /etc/xray/domain
 touch /etc/v2ray/domain
 touch /etc/xray/slwdomain
 touch /etc/v2ray/scdomain
-echo "$dn1" > /root/subdomainx
+echo "$dnss" > /root/domain
+echo "$dnss" > /root/scdomain
+echo "$dnss" > /etc/xray/scdomain
+echo "$dnss" > /etc/v2ray/scdomain
+echo "$dnss" > /etc/xray/domain
+echo "$dnss" > /etc/v2ray/domain
+echo "IP=$dnss" > /var/lib/ipvps.conf
+echo ""
 cd
 sleep 1
-fun_bar 'res1'
 clear
 rm /root/subdomainx
-elif [[ $domain2 == "2" ]]; then
 clear
-echo -e  "${BIBlue}╭══════════════════════════════════════════╮${NC}"
-echo -e  "${BIBlue}│  \033[1;37m  xxxx.vvpnstore.my.id         ${BIBlue}│${NC}"
-echo -e  "${BIBlue}│    \033[1;37mxxxx jadi subdomain nama kamu               ${BIBlue}│${NC}"
-echo -e  "${BIBlue}╰══════════════════════════════════════════╯${NC}"
-echo " "
-until [[ $dn2 =~ ^[a-zA-Z0-9_.-]+$ ]]; do
-read -rp "Masukan subdomain kamu Disini tanpa spasi : " -e dn2
-done
-rm -rf /etc/xray
-rm -rf /etc/v2ray
-rm -rf /etc/nsdomain
-rm -rf /etc/per
-mkdir -p /etc/xray
-mkdir -p /etc/v2ray
-mkdir -p /etc/nsdomain
-mkdir -p /etc/per
-touch /etc/per/id
-touch /etc/per/token
-touch /etc/xray/domain
-touch /etc/v2ray/domain
-touch /etc/xray/slwdomain
-touch /etc/v2ray/scdomain
-echo "$dn2" > /root/subdomainx
-cd
-sleep 1
-fun_bar 'res2'
-clear
-rm /root/subdomainx
-elif [[ $domain2 == "3" ]]; then
-clear
-echo -e  "${BIBlue}╭══════════════════════════════════════════╮${NC}"
-echo -e  "${BIBlue}│  \033[1;37m xxxx.aivpn.my.id       ${BIBlue}│${NC}"
-echo -e  "${BIBlue}│    \033[1;37m xxxx jadi subdomain nama kamu               ${BIBlue}│${NC}"
-echo -e  "${BIBlue}╰══════════════════════════════════════════╯${NC}"
-echo " "
-until [[ $dn3 =~ ^[a-zA-Z0-9_.-]+$ ]]; do
-read -rp "Masukan subdomain kamu Disini tanpa spasi : " -e dn3
-done
-rm -rf /etc/xray
-rm -rf /etc/v2ray
-rm -rf /etc/nsdomain
-rm -rf /etc/per
-mkdir -p /etc/xray
-mkdir -p /etc/v2ray
-mkdir -p /etc/nsdomain
-mkdir -p /etc/per
-touch /etc/per/id
-touch /etc/per/token
-touch /etc/xray/domain
-touch /etc/v2ray/domain
-touch /etc/xray/slwdomain
-touch /etc/v2ray/scdomain
-echo "$dn3" > /root/subdomainx
-cd
-sleep 1
-fun_bar 'res3'
-clear
-rm /root/subdomainx
-elif [[ $domain2 == "4" ]]; then
-clear
-echo -e  "${BIBlue}╭══════════════════════════════════════════╮${NC}"
-echo -e  "${BIBlue}│  \033[1;37m xxxx.aivpn.biz.id        ${BIBlue}│${NC}"
-echo -e  "${BIBlue}│    \033[1;37mxxxx jadi subdomain nama kamu               ${BIBlue}│${NC}"
-echo -e  "${BIBlue}╰══════════════════════════════════════════╯${NC}"
-echo " "
-until [[ $dn4 =~ ^[a-zA-Z0-9_.-]+$ ]]; do
-read -rp "Masukan subdomain kamu Disini tanpa spasi : " -e dn4
-done
-rm -rf /etc/xray
-rm -rf /etc/v2ray
-rm -rf /etc/nsdomain
-rm -rf /etc/per
-mkdir -p /etc/xray
-mkdir -p /etc/v2ray
-mkdir -p /etc/nsdomain
-mkdir -p /etc/per
-touch /etc/per/id
-touch /etc/per/token
-touch /etc/xray/domain
-touch /etc/v2ray/domain
-touch /etc/xray/slwdomain
-touch /etc/v2ray/scdomain
-echo "$dn4" > /root/subdomainx
-cd
-sleep 1
-fun_bar 'res4'
-clear
-rm /root/subdomainx
-elif [[ $domain2 == "5" ]]; then
-clear
-echo -e  "${BIBlue}╭══════════════════════════════════════════╮${NC}"
-echo -e  "${BIBlue}│  \033[1;37m  xxxx.vpnx.my.id       ${BIBlue}│${NC}"
-echo -e  "${BIBlue}│    \033[1;37mxxxx jadi subdomain nama kamu               ${BIBlue}│${NC}"
-echo -e  "${BIBlue}╰══════════════════════════════════════════╯${NC}"
-echo " "
-until [[ $dn4 =~ ^[a-zA-Z0-9_.-]+$ ]]; do
-read -rp "Masukan subdomain kamu Disini tanpa spasi : " -e dn5
-done
-rm -rf /etc/xray
-rm -rf /etc/v2ray
-rm -rf /etc/nsdomain
-rm -rf /etc/per
-mkdir -p /etc/xray
-mkdir -p /etc/v2ray
-mkdir -p /etc/nsdomain
-mkdir -p /etc/per
-touch /etc/per/id
-touch /etc/per/token
-touch /etc/xray/domain
-touch /etc/v2ray/domain
-touch /etc/xray/slwdomain
-touch /etc/v2ray/scdomain
-echo "$dn5" > /root/subdomainx
-cd
-sleep 1
-fun_bar 'res5'
-fi
 if [[ $domain == "3" ]]; then
 clear
 echo -e  "${BIBlue}╭══════════════════════════════════════════╮${NC}"
