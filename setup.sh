@@ -371,25 +371,25 @@ fi
 if [[ $domain == "2" ]]; then
 clear
 echo -e "${BIBlue}╭══════════════════════════════════════════╮${NC}"
-echo -e "${BIBlue}│ \033[1;37mPlease select a your Choice to Set Domain${BIBlue}│${NC}"
+echo -e "${BIBlue}│ \033[1;37mPlease Set Domain${BIBlue}│${NC}"
 echo -e "${BIBlue}╰══════════════════════════════════════════╯${NC}"
 echo -e " "
 echo -e "${BIBlue}╭══════════════════════════════════════════╮${NC}"
-echo -e "${BIBlue}│  [ 1 ]  \033[1;37mDomain xxxx.vpn-express.my.id          ${NC}"
-echo -e "${BIBlue}│  [ 2 ]  \033[1;37mDomain xxxx.vvpnstore.my.id          ${NC}"
-echo -e "${BIBlue}│  [ 3 ]  \033[1;37mDomain xxxx.aivpn.my.id          ${NC}"
-echo -e "${BIBlue}│  [ 4 ]  \033[1;37mDomain xxxx.aivpn.biz.id          ${NC}"
-echo -e "${BIBlue}│  [ 5 ]  \033[1;37mDomain xxxx.vpnx.my.id          ${NC}"
+echo -e "${BIBlue}│  [ 1 ]  \033[1;37mDomain xxxx.kingvpn.my.id          ${NC}"
+#echo -e "${BIBlue}│  [ 2 ]  \033[1;37mDomain xxxx.vvpnstore.my.id          ${NC}"
+#echo -e "${BIBlue}│  [ 3 ]  \033[1;37mDomain xxxx.aivpn.my.id          ${NC}"
+#echo -e "${BIBlue}│  [ 4 ]  \033[1;37mDomain xxxx.aivpn.biz.id          ${NC}"
+#echo -e "${BIBlue}│  [ 5 ]  \033[1;37mDomain xxxx.vpnx.my.id          ${NC}"
 echo -e "${BIBlue}╰══════════════════════════════════════════╯${NC}"
 echo -e "${BIBlue} kata (xxxx) nanti akan diganti dengan nama kalian${NC}"
 until [[ $domain2 =~ ^[1-5]+$ ]]; do 
-read -p "  Pilih Domain yg anda suka 1-5 : " domain2
+read -p "  Pilih Domain 1 : " domain2
 done
 fi
 if [[ $domain2 == "1" ]]; then
 clear
 echo -e  "${BIBlue}╭══════════════════════════════════════════╮${NC}"
-echo -e  "${BIBlue}│  \033[1;37m xxxx.vpn-express.my.id        ${BIBlue}│${NC}"
+echo -e  "${BIBlue}│  \033[1;37m xxxx.kingvpn.my.id        ${BIBlue}│${NC}"
 echo -e  "${BIBlue}│    \033[1;37mxxxx jadi subdomain nama kamu               ${BIBlue}│${NC}"
 echo -e  "${BIBlue}╰══════════════════════════════════════════╯${NC}"
 echo " "
