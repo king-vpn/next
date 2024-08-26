@@ -688,7 +688,7 @@ clear
 #echo -e "${BIBlue}╭══════════════════════════════════════════╮${NC}"
 #echo -e "${BIBlue}│ ${BGCOLOR}           DOWNLOAD SLOW DNS            ${NC}${BIBlue} │${NC}"
 #echo -e "${BIBlue}╰══════════════════════════════════════════╯${NC}"
-#wget https://raw.githubusercontent.com/king-vpn/next/main/slowdns/installsl.sh && chmod +x installsl.sh && bash installsl.sh
+wget https://raw.githubusercontent.com/king-vpn/next/main/slowdns/installsl.sh && chmod +x installsl.sh && bash installsl.sh
 #clear
 
 
